@@ -2,7 +2,7 @@
 
 ## What Pellar Is
 
-Pellar Technologies is a software development company built in Newcastle-upon-Tyne. It designs, builds, and operates focused software products across compliance, document infrastructure, workflow automation, and consumer tools.
+Pellar Technologies is a software development company built in Newcastle-upon-Tyne. It designs, builds, and operates focused software products across compliance, document infrastructure, studio management, and consumer tools.
 
 It is not a holding company. It is not a venture studio. It builds things. From Newcastle.
 
@@ -101,8 +101,21 @@ All six products sit under Pellar Technologies.
 
 #### Forma
 **URL:** useforma.co.uk
-**One-liner:** Workflow automation and form infrastructure for businesses.
-**Who it's for:** Teams that need structured workflows, form handling, and process automation without enterprise bloat.
+**One-liner:** Your studio, online.
+**Expanded:** Forma is a unified platform for fitness and leisure studios. Website, class booking, payments, and email in one place. No more stitching together five different tools. Studios get a branded site, native scheduling, Stripe-powered payments, and automated client communications. Live in under a week.
+**Core concept:** Studios deserve better than enterprise software priced for chains or a patchwork of disconnected widgets.
+
+**What it includes:**
+- Purpose-built studio website with custom domain
+- Native class booking (not an embedded widget)
+- Stripe-powered payments for classes, packs, and memberships
+- Automated email confirmations and reminders
+- Live schedule management with capacity controls
+- Analytics dashboard
+
+**What it is not:** Not enterprise software. Not a booking widget bolted onto a template. Not another tool that costs more than it should.
+
+**Who it's for:** Pilates studios, yoga studios, fitness facilities, and leisure businesses. Studios that want a professional digital presence without the complexity or cost of platforms like Mindbody.
 
 #### Noodle
 **One-liner:** Thought capture for people who think faster than they can organise.
@@ -121,6 +134,7 @@ All six products sit under Pellar Technologies.
 **Who it's for:** Law students and career changers preparing for SQE1 and SQE2.
 
 #### Untie
+**URL:** untietheknot.xyz
 **One-liner:** Financial clarity for separation and divorce.
 **Expanded:** Untie helps people navigate the financial side of separation with structured planning tools and access to a marketplace of specialist advisors.
 **Who it's for:** Individuals going through separation or divorce who need to understand their financial position.
