@@ -1,3 +1,7 @@
+"use client";
+
+import { WebsiteCarbonBadge } from "react-websitecarbon-badge";
+
 export function Footer() {
   return (
     <footer className="border-t border-white/5">
@@ -28,10 +32,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row md:justify-between gap-4">
+        <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row md:justify-between items-center gap-4">
           <p className="font-dm text-xs text-stone/60">
             &copy; {new Date().getFullYear()} Pellar Technologies Ltd. All rights reserved.
           </p>
+          <WebsiteCarbonBadge dark url="pellar.co.uk" />
           <p className="font-dm text-xs text-stone/60">
             pellar.co.uk
           </p>
