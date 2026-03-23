@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit, Instrument_Serif, DM_Sans } from "next/font/google";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
+import { CookieBanner } from "@/components/cookie-banner";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -65,6 +66,7 @@ export default function RootLayout({
         <Nav />
         <div className="flex-1" id="main-content">{children}</div>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );

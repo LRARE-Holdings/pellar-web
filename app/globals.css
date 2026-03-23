@@ -150,6 +150,70 @@ body {
   border-bottom-color: var(--sage);
 }
 
+/* Legal prose typography */
+.legal-prose h2 {
+  font-family: var(--font-outfit-var), sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.legal-prose h3 {
+  font-family: var(--font-outfit-var), sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--white);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-prose p {
+  font-family: var(--font-dm-var), sans-serif;
+  font-size: 0.9375rem;
+  color: var(--stone);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.legal-prose ul,
+.legal-prose ol {
+  font-family: var(--font-dm-var), sans-serif;
+  font-size: 0.9375rem;
+  color: var(--stone);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.legal-prose ul {
+  list-style-type: disc;
+}
+
+.legal-prose ol {
+  list-style-type: decimal;
+}
+
+.legal-prose li {
+  margin-bottom: 0.5rem;
+}
+
+.legal-prose a {
+  color: var(--forest);
+  transition: color 0.3s;
+}
+
+.legal-prose a:hover {
+  color: var(--sage);
+}
+
+.legal-prose strong {
+  color: var(--white);
+  font-weight: 500;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .reveal {
