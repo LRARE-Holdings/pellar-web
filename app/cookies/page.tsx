@@ -55,7 +55,7 @@ export default function CookiesPage() {
       <h2>Third-party cookies</h2>
       <p>
         We do not use any third-party cookies on pellar.co.uk. Our individual products
-        (Receipt, Vara, Forma, Noodle, SQEz, and Untie) are hosted on their own domains
+        (Forma, Receipt, and Noodle) are hosted on their own domains
         and may have separate cookie policies.
       </p>
 

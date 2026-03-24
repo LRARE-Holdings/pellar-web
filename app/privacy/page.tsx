@@ -32,8 +32,8 @@ export default function PrivacyPage() {
       <h2>What this policy covers</h2>
       <p>
         This policy explains what personal data we collect when you visit pellar.co.uk,
-        how we use it, and what rights you have. Our individual products (Receipt, Vara,
-        Forma, Noodle, SQEz, and Untie) may have their own privacy terms that apply
+        how we use it, and what rights you have. Our individual products (Forma,
+        Receipt, and Noodle) may have their own privacy terms that apply
         when you use those services.
       </p>
 

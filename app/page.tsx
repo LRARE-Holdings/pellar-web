@@ -2,7 +2,7 @@ import { HeroReveal } from "@/components/hero-reveal";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import Link from "next/link";
 
-const flagshipProducts = [
+const secondaryProducts = [
   {
     name: "Receipt",
     href: "/receipt",
@@ -12,41 +12,11 @@ const flagshipProducts = [
     url: "getreceipt.co",
   },
   {
-    name: "Vara",
-    href: "/vara",
-    oneLiner: "AI-native regulatory compliance monitoring.",
-    description:
-      "Monitors UK regulatory bodies, interprets policy changes, maps them to your obligations, and generates actionable outputs.",
-    url: "getvara.co.uk",
-    comingSoon: true,
-  },
-  {
-    name: "Forma",
-    href: "/forma",
-    oneLiner: "Your studio, online.",
-    description:
-      "Website, class booking, payments, and email for fitness and leisure studios. One platform, not five disconnected tools.",
-    url: "useforma.co.uk",
-  },
-  {
     name: "Noodle",
     href: "/noodle",
     oneLiner: "Thought capture for fast thinkers.",
     description:
       "Capture ideas, thoughts, and fleeting notes before they disappear. AI helps cluster, resurface, and expand your thinking.",
-  },
-];
-
-const portfolioProducts = [
-  {
-    name: "SQEz",
-    oneLiner: "Precision SQE exam preparation.",
-    url: "sqez.lrare.co.uk",
-  },
-  {
-    name: "Untie",
-    oneLiner: "Financial clarity for separation and divorce.",
-    url: "untietheknot.xyz",
   },
 ];
 
@@ -106,35 +76,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Flagship Products */}
+      {/* Forma — Primary Product */}
       <section className="px-6 py-32">
         <div className="max-w-7xl mx-auto">
           <ScrollReveal>
+            <Link
+              href="/forma"
+              className="group block bg-ink p-10 md:p-16 transition-all duration-500 hover:bg-white/[0.03] border border-white/5 hover:border-forest/30"
+            >
+              <p className="font-dm text-sm text-stone/60 uppercase tracking-widest mb-6">
+                Flagship
+              </p>
+              <h2 className="font-outfit font-light text-3xl md:text-5xl lg:text-6xl text-off-white mb-4">
+                Forma
+              </h2>
+              <p className="font-instrument italic text-sage text-xl md:text-2xl mb-6">
+                Your studio, online.
+              </p>
+              <p className="font-dm text-base md:text-lg text-stone leading-relaxed max-w-2xl mb-10">
+                Website, class booking, payments, and email for fitness and leisure studios. One platform, not five disconnected tools.
+              </p>
+              <div className="flex items-center gap-3">
+                <span className="font-dm text-sm text-stone/60">
+                  useforma.co.uk
+                </span>
+                <span className="text-forest group-hover:text-sage transition-colors duration-300 ml-auto">
+                  <ArrowIcon />
+                </span>
+              </div>
+            </Link>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Secondary Products */}
+      <section className="px-6 py-24 bg-white/[0.015]">
+        <div className="max-w-7xl mx-auto">
+          <ScrollReveal>
             <p className="font-dm text-sm text-stone/60 uppercase tracking-widest mb-4">
-              Products
+              Also from Pellar
             </p>
-            <h2 className="font-outfit font-light text-3xl md:text-5xl text-off-white mb-20">
-              Six products. One standard.
-            </h2>
           </ScrollReveal>
 
           <div className="grid md:grid-cols-2 gap-px bg-white/5">
-            {flagshipProducts.map((product, i) => (
+            {secondaryProducts.map((product, i) => (
               <ScrollReveal key={product.name} delay={i * 100}>
                 <Link
                   href={product.href}
                   className="group block bg-ink p-10 md:p-14 transition-all duration-500 hover:bg-white/[0.03] border-t-2 border-t-transparent hover:border-t-forest"
                 >
-                  <div className="flex items-start justify-between mb-6">
-                    <h3 className="font-outfit font-light text-2xl md:text-3xl text-off-white">
-                      {product.name}
-                    </h3>
-                    {product.comingSoon && (
-                      <span className="font-dm text-xs text-sage border border-sage/30 rounded-full px-3 py-1">
-                        Coming soon
-                      </span>
-                    )}
-                  </div>
+                  <h3 className="font-outfit font-light text-2xl md:text-3xl text-off-white mb-4">
+                    {product.name}
+                  </h3>
                   <p className="font-instrument italic text-sage text-lg mb-4">
                     {product.oneLiner}
                   </p>
@@ -152,54 +145,6 @@ export default function Home() {
                     </span>
                   </div>
                 </Link>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Portfolio */}
-      <section className="px-6 py-24 bg-white/[0.015]">
-        <div className="max-w-7xl mx-auto">
-          <ScrollReveal>
-            <p className="font-dm text-sm text-stone/60 uppercase tracking-widest mb-4">
-              Portfolio
-            </p>
-            <h2 className="font-outfit font-light text-2xl md:text-3xl text-off-white mb-12">
-              Also from Pellar.
-            </h2>
-          </ScrollReveal>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {portfolioProducts.map((product, i) => (
-              <ScrollReveal key={product.name} delay={i * 100}>
-                {product.url ? (
-                  <a
-                    href={`https://${product.url}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block border border-white/5 rounded-sm p-8 hover:border-white/10 transition-colors duration-300 group"
-                  >
-                    <h3 className="font-outfit font-light text-xl text-off-white mb-2">
-                      {product.name}
-                    </h3>
-                    <p className="font-dm text-sm text-stone">
-                      {product.oneLiner}
-                    </p>
-                    <p className="font-dm text-xs text-stone/40 mt-4 group-hover:text-stone/60 transition-colors duration-300">
-                      {product.url}
-                    </p>
-                  </a>
-                ) : (
-                  <div className="border border-white/5 rounded-sm p-8">
-                    <h3 className="font-outfit font-light text-xl text-off-white mb-2">
-                      {product.name}
-                    </h3>
-                    <p className="font-dm text-sm text-stone">
-                      {product.oneLiner}
-                    </p>
-                  </div>
-                )}
               </ScrollReveal>
             ))}
           </div>
