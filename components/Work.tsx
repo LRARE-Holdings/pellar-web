@@ -29,7 +29,7 @@ export function Work() {
           <h2 className="font-instrument text-3xl md:text-5xl text-fg mb-6">
             Products we&apos;ve built and operate
           </h2>
-          <p className="font-dm text-lg text-fg-muted max-w-2xl leading-relaxed mb-20">
+          <p className="font-satoshi text-lg text-fg-muted max-w-2xl leading-relaxed mb-20">
             We don&apos;t just talk about building software. These are products we&apos;ve designed, shipped, and continue to run.
           </p>
         </ScrollReveal>
@@ -41,10 +41,10 @@ export function Work() {
                 <h3 className="font-instrument text-2xl md:text-3xl text-fg mb-4">
                   {product.name}
                 </h3>
-                <p className="font-dm text-sm text-fg-secondary leading-relaxed mb-6">
+                <p className="font-satoshi text-sm text-fg-secondary leading-relaxed mb-6">
                   {product.description}
                 </p>
-                <p className="font-dm text-sm text-fg-muted leading-relaxed mb-8">
+                <p className="font-satoshi text-sm text-fg-muted leading-relaxed mb-8">
                   {product.demonstrates}
                 </p>
                 {product.url && (
@@ -52,7 +52,7 @@ export function Work() {
                     href={product.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 font-dm text-sm text-forest hover:text-sage transition-colors duration-300"
+                    className="inline-flex items-center gap-2 font-satoshi text-sm text-forest hover:text-sage transition-colors duration-300"
                   >
                     <span>{product.urlLabel}</span>
                     <svg width="14" height="14" viewBox="0 0 16 16" fill="none">

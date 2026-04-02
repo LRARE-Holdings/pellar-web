@@ -35,13 +35,13 @@ export function Principles() {
           {principles.map((p, i) => (
             <ScrollReveal key={p.num} delay={i * 100}>
               <div>
-                <span className="font-dm text-xs text-sage block mb-4">
+                <span className="font-satoshi text-xs text-sage block mb-4">
                   {p.num}
                 </span>
-                <h3 className="font-dm font-medium text-base text-fg mb-4">
+                <h3 className="font-satoshi font-medium text-base text-fg mb-4">
                   {p.title}
                 </h3>
-                <p className="font-dm text-sm text-fg-muted leading-relaxed">
+                <p className="font-satoshi text-sm text-fg-muted leading-relaxed">
                   {p.description}
                 </p>
               </div>

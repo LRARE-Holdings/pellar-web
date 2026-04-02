@@ -9,24 +9,24 @@ export function Footer() {
             <span className="font-outfit text-[15px] font-light tracking-[0.35em] text-fg uppercase block mb-3">
               PELLAR
             </span>
-            <p className="font-dm text-sm text-fg-muted">
+            <p className="font-satoshi text-sm text-fg-muted">
               Software built for your business.
             </p>
           </div>
 
           <div className="flex flex-col md:items-end gap-2">
-            <p className="font-dm text-sm text-fg-secondary">
+            <p className="font-satoshi text-sm text-fg-secondary">
               Pellar Technologies Ltd
             </p>
-            <p className="font-dm text-xs text-fg-muted">
+            <p className="font-satoshi text-xs text-fg-muted">
               Company No. 16807366
             </p>
-            <p className="font-dm text-sm text-fg-secondary">
+            <p className="font-satoshi text-sm text-fg-secondary">
               Newcastle-upon-Tyne
             </p>
             <a
               href="mailto:hello@pellar.co.uk"
-              className="font-dm text-sm text-forest hover:text-sage transition-colors duration-300"
+              className="font-satoshi text-sm text-forest hover:text-sage transition-colors duration-300"
             >
               hello@pellar.co.uk
             </a>
@@ -35,17 +35,17 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row md:justify-between items-start md:items-center gap-6">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            <Link href="/privacy" className="font-dm text-xs text-fg-muted hover:text-fg-muted transition-colors duration-300">
+            <Link href="/privacy" className="font-satoshi text-xs text-fg-muted hover:text-fg transition-colors duration-300">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="font-dm text-xs text-fg-muted hover:text-fg-muted transition-colors duration-300">
+            <Link href="/terms" className="font-satoshi text-xs text-fg-muted hover:text-fg transition-colors duration-300">
               Terms of Service
             </Link>
-            <Link href="/cookies" className="font-dm text-xs text-fg-muted hover:text-fg-muted transition-colors duration-300">
+            <Link href="/cookies" className="font-satoshi text-xs text-fg-muted hover:text-fg transition-colors duration-300">
               Cookie Policy
             </Link>
           </div>
-          <p className="font-dm text-xs text-fg-muted">
+          <p className="font-satoshi text-xs text-fg-muted">
             &copy; {new Date().getFullYear()} Pellar Technologies Ltd. All rights reserved.
           </p>
         </div>

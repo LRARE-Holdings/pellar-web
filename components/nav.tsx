@@ -41,25 +41,25 @@ export function Nav() {
         <div className="hidden md:flex items-center gap-10">
           <button
             onClick={() => scrollToSection("services")}
-            className="font-dm text-sm text-fg-muted hover:text-fg transition-colors duration-300 cursor-pointer"
+            className="font-satoshi text-sm text-fg-muted hover:text-fg transition-colors duration-300 cursor-pointer"
           >
             Services
           </button>
           <button
             onClick={() => scrollToSection("work")}
-            className="font-dm text-sm text-fg-muted hover:text-fg transition-colors duration-300 cursor-pointer"
+            className="font-satoshi text-sm text-fg-muted hover:text-fg transition-colors duration-300 cursor-pointer"
           >
             Work
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="font-dm text-sm text-fg-muted hover:text-fg transition-colors duration-300 cursor-pointer"
+            className="font-satoshi text-sm text-fg-muted hover:text-fg transition-colors duration-300 cursor-pointer"
           >
             About
           </button>
           <a
             href="mailto:hello@pellar.co.uk"
-            className="font-dm text-sm text-forest hover:text-sage transition-colors duration-300"
+            className="font-satoshi text-sm text-forest hover:text-sage transition-colors duration-300"
           >
             Get in touch
           </a>
@@ -97,25 +97,25 @@ export function Nav() {
         <div className="px-6 pt-6 pb-8 flex flex-col gap-5 bg-bg/95 backdrop-blur-xl">
           <button
             onClick={() => scrollToSection("services")}
-            className="font-dm text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center cursor-pointer"
+            className="font-satoshi text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center cursor-pointer"
           >
             Services
           </button>
           <button
             onClick={() => scrollToSection("work")}
-            className="font-dm text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center cursor-pointer"
+            className="font-satoshi text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center cursor-pointer"
           >
             Work
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="font-dm text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center cursor-pointer"
+            className="font-satoshi text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center cursor-pointer"
           >
             About
           </button>
           <a
             href="mailto:hello@pellar.co.uk"
-            className="font-dm text-base text-forest hover:text-sage transition-colors min-h-[44px] flex items-center"
+            className="font-satoshi text-base text-forest hover:text-sage transition-colors min-h-[44px] flex items-center"
           >
             Get in touch
           </a>

@@ -36,7 +36,7 @@ export function Services() {
           <h2 className="font-instrument text-3xl md:text-5xl text-fg mb-6">
             What we build
           </h2>
-          <p className="font-dm text-lg text-fg-muted max-w-2xl leading-relaxed mb-20">
+          <p className="font-satoshi text-lg text-fg-muted max-w-2xl leading-relaxed mb-20">
             Software that solves real problems. We work with businesses at every stage, from first prototype to production platform.
           </p>
         </ScrollReveal>
@@ -45,10 +45,10 @@ export function Services() {
           {services.map((service, i) => (
             <ScrollReveal key={service.title} delay={i * 80}>
               <div className="border-t border-border pt-6">
-                <h3 className="font-dm font-medium text-base text-fg mb-3">
+                <h3 className="font-satoshi font-medium text-base text-fg mb-3">
                   {service.title}
                 </h3>
-                <p className="font-dm text-sm text-fg-muted leading-relaxed">
+                <p className="font-satoshi text-sm text-fg-muted leading-relaxed">
                   {service.description}
                 </p>
               </div>

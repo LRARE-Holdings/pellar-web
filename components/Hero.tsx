@@ -11,7 +11,7 @@ export function Hero() {
         </HeroReveal>
 
         <HeroReveal delay={350}>
-          <p className="mt-8 font-dm text-lg md:text-xl text-fg-muted max-w-xl leading-relaxed">
+          <p className="mt-8 font-satoshi text-lg md:text-xl text-fg-muted max-w-xl leading-relaxed">
             Web applications, MVPs, and production platforms. Built and maintained by a small, focused team in Newcastle.
           </p>
         </HeroReveal>

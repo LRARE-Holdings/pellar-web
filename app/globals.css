@@ -53,7 +53,7 @@
 
   --font-outfit: var(--font-outfit-var);
   --font-instrument: var(--font-instrument-var);
-  --font-dm: var(--font-dm-var);
+  --font-satoshi: var(--font-satoshi-var);
 }
 
 /* Grain texture overlay */
@@ -89,7 +89,7 @@ html {
 body {
   background: var(--bg);
   color: var(--fg);
-  font-family: var(--font-dm-var), sans-serif;
+  font-family: var(--font-satoshi-var), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -141,7 +141,7 @@ body {
   padding: 12px 24px;
   background: var(--forest);
   color: var(--white);
-  font-family: var(--font-dm-var), sans-serif;
+  font-family: var(--font-satoshi-var), sans-serif;
   font-size: 14px;
   text-decoration: none;
   border-radius: 0 0 4px 4px;
@@ -167,7 +167,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  font-family: var(--font-dm-var), sans-serif;
+  font-family: var(--font-satoshi-var), sans-serif;
   font-size: 18px;
   color: var(--forest);
   transition: color 0.3s, gap 0.3s;
@@ -193,7 +193,7 @@ body {
 }
 
 .legal-prose h3 {
-  font-family: var(--font-dm-var), sans-serif;
+  font-family: var(--font-satoshi-var), sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   color: var(--fg);
@@ -202,7 +202,7 @@ body {
 }
 
 .legal-prose p {
-  font-family: var(--font-dm-var), sans-serif;
+  font-family: var(--font-satoshi-var), sans-serif;
   font-size: 0.9375rem;
   color: var(--fg-muted);
   line-height: 1.8;
@@ -211,7 +211,7 @@ body {
 
 .legal-prose ul,
 .legal-prose ol {
-  font-family: var(--font-dm-var), sans-serif;
+  font-family: var(--font-satoshi-var), sans-serif;
   font-size: 0.9375rem;
   color: var(--fg-muted);
   line-height: 1.8;

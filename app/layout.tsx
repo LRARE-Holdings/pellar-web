@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Outfit, Instrument_Serif, DM_Sans } from "next/font/google";
+import { Outfit, Instrument_Serif } from "next/font/google";
+import localFont from "next/font/local";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { CookieBanner } from "@/components/cookie-banner";
@@ -18,10 +19,14 @@ const instrumentSerif = Instrument_Serif({
   style: ["normal", "italic"],
 });
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-var",
-  subsets: ["latin"],
-  weight: ["400", "500"],
+const satoshi = localFont({
+  src: [
+    { path: "./fonts/Satoshi-Regular.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/Satoshi-Medium.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/Satoshi-Bold.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-satoshi-var",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -60,10 +65,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${instrumentSerif.variable} ${dmSans.variable} antialiased`}
+      className={`${outfit.variable} ${instrumentSerif.variable} ${satoshi.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col grain-overlay">
-        <a href="#main-content" className="skip-to-content font-dm">
+        <a href="#main-content" className="skip-to-content font-satoshi">
           Skip to content
         </a>
         <Nav />

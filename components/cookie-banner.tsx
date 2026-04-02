@@ -31,7 +31,7 @@ export function CookieBanner() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="bg-bg/95 backdrop-blur-xl border border-border shadow-sm p-5 md:p-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
-          <p className="font-dm text-sm text-fg-muted flex-1">
+          <p className="font-satoshi text-sm text-fg-muted flex-1">
             This site uses only essential cookies required for it to function. No tracking, no analytics.{" "}
             <Link
               href="/cookies"
@@ -42,7 +42,7 @@ export function CookieBanner() {
           </p>
           <button
             onClick={dismiss}
-            className="font-dm text-sm text-fg bg-surface hover:bg-border border border-border px-6 py-2.5 transition-colors duration-300 shrink-0 cursor-pointer"
+            className="font-satoshi text-sm text-fg bg-surface hover:bg-border border border-border px-6 py-2.5 transition-colors duration-300 shrink-0 cursor-pointer"
           >
             Got it
           </button>
