@@ -26,7 +26,7 @@ export function Principles() {
     <section className="px-6 py-32">
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
-          <h2 className="font-instrument text-3xl md:text-5xl text-ink mb-20">
+          <h2 className="font-instrument text-3xl md:text-5xl text-fg mb-20">
             How we work
           </h2>
         </ScrollReveal>
@@ -38,10 +38,10 @@ export function Principles() {
                 <span className="font-dm text-xs text-sage block mb-4">
                   {p.num}
                 </span>
-                <h3 className="font-dm font-medium text-base text-ink mb-4">
+                <h3 className="font-dm font-medium text-base text-fg mb-4">
                   {p.title}
                 </h3>
-                <p className="font-dm text-sm text-stone leading-relaxed">
+                <p className="font-dm text-sm text-fg-muted leading-relaxed">
                   {p.description}
                 </p>
               </div>

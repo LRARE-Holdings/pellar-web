@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* Base palette */
 :root {
   --ink: #1a1a1a;
   --forest: #2d4a3e;
@@ -7,9 +8,32 @@
   --stone: #b8b0a8;
   --cream: #f5f0eb;
   --white: #ffffff;
+}
 
-  --background: var(--cream);
-  --foreground: var(--ink);
+/* Semantic tokens — light mode (default) */
+:root {
+  --bg: var(--cream);
+  --fg: var(--ink);
+  --fg-muted: var(--stone);
+  --fg-secondary: rgba(26, 26, 26, 0.7);
+  --surface: var(--white);
+  --border: rgba(26, 26, 26, 0.08);
+  --selection-bg: rgba(45, 74, 62, 0.15);
+  --grain-opacity: 0;
+}
+
+/* Semantic tokens — dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--ink);
+    --fg: var(--cream);
+    --fg-muted: var(--stone);
+    --fg-secondary: rgba(245, 240, 235, 0.75);
+    --surface: rgba(255, 255, 255, 0.02);
+    --border: rgba(255, 255, 255, 0.08);
+    --selection-bg: rgba(45, 74, 62, 0.4);
+    --grain-opacity: 0.03;
+  }
 }
 
 @theme inline {
@@ -20,9 +44,30 @@
   --color-cream: var(--cream);
   --color-white: var(--white);
 
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-secondary: var(--fg-secondary);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+
   --font-outfit: var(--font-outfit-var);
   --font-instrument: var(--font-instrument-var);
   --font-dm: var(--font-dm-var);
+}
+
+/* Grain texture overlay */
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 20%); }
+  90% { transform: translate(-10%, 10%); }
 }
 
 /* Scroll reveal animation */
@@ -42,11 +87,30 @@ html {
 }
 
 body {
-  background: var(--cream);
-  color: var(--ink);
+  background: var(--bg);
+  color: var(--fg);
   font-family: var(--font-dm-var), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Grain overlay — visible in dark mode only */
+.grain-overlay::before {
+  content: "";
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+  opacity: var(--grain-opacity);
+  animation: grain 8s steps(10) infinite;
 }
 
 /* Scroll reveal utility */
@@ -64,8 +128,8 @@ body {
 
 /* Selection color */
 ::selection {
-  background: rgba(45, 74, 62, 0.2);
-  color: var(--ink);
+  background: var(--selection-bg);
+  color: var(--fg);
 }
 
 /* Skip to content link */
@@ -122,7 +186,7 @@ body {
   font-family: var(--font-instrument-var), serif;
   font-weight: 400;
   font-size: 1.5rem;
-  color: var(--ink);
+  color: var(--fg);
   margin-top: 3rem;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -132,7 +196,7 @@ body {
   font-family: var(--font-dm-var), sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
-  color: var(--ink);
+  color: var(--fg);
   margin-top: 2rem;
   margin-bottom: 0.75rem;
 }
@@ -140,8 +204,7 @@ body {
 .legal-prose p {
   font-family: var(--font-dm-var), sans-serif;
   font-size: 0.9375rem;
-  color: var(--ink);
-  opacity: 0.7;
+  color: var(--fg-muted);
   line-height: 1.8;
   margin-bottom: 1rem;
 }
@@ -150,8 +213,7 @@ body {
 .legal-prose ol {
   font-family: var(--font-dm-var), sans-serif;
   font-size: 0.9375rem;
-  color: var(--ink);
-  opacity: 0.7;
+  color: var(--fg-muted);
   line-height: 1.8;
   margin-bottom: 1rem;
   padding-left: 1.5rem;
@@ -179,7 +241,7 @@ body {
 }
 
 .legal-prose strong {
-  color: var(--ink);
+  color: var(--fg);
   font-weight: 500;
 }
 
@@ -189,6 +251,10 @@ body {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+
+  .grain-overlay::before {
+    animation: none;
   }
 
   html {

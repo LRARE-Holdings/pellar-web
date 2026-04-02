@@ -12,8 +12,8 @@ const products = [
   },
   {
     name: "Noodle",
-    url: null,
-    urlLabel: null,
+    url: "https://noodleapp.xyz",
+    urlLabel: "noodleapp.xyz",
     description:
       "Thought-capture app for iOS and Android. Quick capture, AI-assisted clustering, and smart resurfacing of forgotten ideas.",
     demonstrates:
@@ -23,13 +23,13 @@ const products = [
 
 export function Work() {
   return (
-    <section id="work" className="px-6 py-32 bg-white">
+    <section id="work" className="px-6 py-32 bg-surface">
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
-          <h2 className="font-instrument text-3xl md:text-5xl text-ink mb-6">
+          <h2 className="font-instrument text-3xl md:text-5xl text-fg mb-6">
             Products we&apos;ve built and operate
           </h2>
-          <p className="font-dm text-lg text-stone max-w-2xl leading-relaxed mb-20">
+          <p className="font-dm text-lg text-fg-muted max-w-2xl leading-relaxed mb-20">
             We don&apos;t just talk about building software. These are products we&apos;ve designed, shipped, and continue to run.
           </p>
         </ScrollReveal>
@@ -37,14 +37,14 @@ export function Work() {
         <div className="grid md:grid-cols-2 gap-12">
           {products.map((product, i) => (
             <ScrollReveal key={product.name} delay={i * 120}>
-              <div className="border border-stone/15 p-8 md:p-10">
-                <h3 className="font-instrument text-2xl md:text-3xl text-ink mb-4">
+              <div className="border border-border p-8 md:p-10">
+                <h3 className="font-instrument text-2xl md:text-3xl text-fg mb-4">
                   {product.name}
                 </h3>
-                <p className="font-dm text-sm text-ink/80 leading-relaxed mb-6">
+                <p className="font-dm text-sm text-fg-secondary leading-relaxed mb-6">
                   {product.description}
                 </p>
-                <p className="font-dm text-sm text-stone leading-relaxed mb-8">
+                <p className="font-dm text-sm text-fg-muted leading-relaxed mb-8">
                   {product.demonstrates}
                 </p>
                 {product.url && (

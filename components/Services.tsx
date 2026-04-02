@@ -33,10 +33,10 @@ export function Services() {
     <section id="services" className="px-6 py-32">
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
-          <h2 className="font-instrument text-3xl md:text-5xl text-ink mb-6">
+          <h2 className="font-instrument text-3xl md:text-5xl text-fg mb-6">
             What we build
           </h2>
-          <p className="font-dm text-lg text-stone max-w-2xl leading-relaxed mb-20">
+          <p className="font-dm text-lg text-fg-muted max-w-2xl leading-relaxed mb-20">
             Software that solves real problems. We work with businesses at every stage, from first prototype to production platform.
           </p>
         </ScrollReveal>
@@ -44,11 +44,11 @@ export function Services() {
         <div className="grid md:grid-cols-2 gap-x-16 gap-y-14">
           {services.map((service, i) => (
             <ScrollReveal key={service.title} delay={i * 80}>
-              <div className="border-t border-stone/20 pt-6">
-                <h3 className="font-dm font-medium text-base text-ink mb-3">
+              <div className="border-t border-border pt-6">
+                <h3 className="font-dm font-medium text-base text-fg mb-3">
                   {service.title}
                 </h3>
-                <p className="font-dm text-sm text-stone leading-relaxed">
+                <p className="font-dm text-sm text-fg-muted leading-relaxed">
                   {service.description}
                 </p>
               </div>

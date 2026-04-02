@@ -26,13 +26,13 @@ export function Nav() {
       aria-label="Main"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-cream/90 backdrop-blur-xl py-4 shadow-[0_1px_0_rgba(0,0,0,0.05)]"
+          ? "bg-bg/90 backdrop-blur-xl py-4"
           : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="group">
-          <span className="font-outfit text-[15px] font-light tracking-[0.35em] text-ink uppercase">
+          <span className="font-outfit text-[15px] font-light tracking-[0.35em] text-fg uppercase">
             PELLAR
           </span>
         </Link>
@@ -41,19 +41,19 @@ export function Nav() {
         <div className="hidden md:flex items-center gap-10">
           <button
             onClick={() => scrollToSection("services")}
-            className="font-dm text-sm text-stone hover:text-ink transition-colors duration-300 cursor-pointer"
+            className="font-dm text-sm text-fg-muted hover:text-fg transition-colors duration-300 cursor-pointer"
           >
             Services
           </button>
           <button
             onClick={() => scrollToSection("work")}
-            className="font-dm text-sm text-stone hover:text-ink transition-colors duration-300 cursor-pointer"
+            className="font-dm text-sm text-fg-muted hover:text-fg transition-colors duration-300 cursor-pointer"
           >
             Work
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="font-dm text-sm text-stone hover:text-ink transition-colors duration-300 cursor-pointer"
+            className="font-dm text-sm text-fg-muted hover:text-fg transition-colors duration-300 cursor-pointer"
           >
             About
           </button>
@@ -67,19 +67,19 @@ export function Nav() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-ink p-2 -mr-2"
+          className="md:hidden text-fg p-2 -mr-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
         >
           <div className="w-6 flex flex-col gap-1.5">
             <span
-              className={`block h-px bg-ink transition-all duration-300 ${
+              className={`block h-px bg-fg transition-all duration-300 ${
                 menuOpen ? "rotate-45 translate-y-[4px]" : ""
               }`}
             />
             <span
-              className={`block h-px bg-ink transition-all duration-300 ${
+              className={`block h-px bg-fg transition-all duration-300 ${
                 menuOpen ? "-rotate-45 -translate-y-[3px]" : ""
               }`}
             />
@@ -94,22 +94,22 @@ export function Nav() {
         }`}
         aria-hidden={!menuOpen}
       >
-        <div className="px-6 pt-6 pb-8 flex flex-col gap-5 bg-cream/95 backdrop-blur-xl">
+        <div className="px-6 pt-6 pb-8 flex flex-col gap-5 bg-bg/95 backdrop-blur-xl">
           <button
             onClick={() => scrollToSection("services")}
-            className="font-dm text-base text-stone hover:text-ink transition-colors min-h-[44px] flex items-center cursor-pointer"
+            className="font-dm text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center cursor-pointer"
           >
             Services
           </button>
           <button
             onClick={() => scrollToSection("work")}
-            className="font-dm text-base text-stone hover:text-ink transition-colors min-h-[44px] flex items-center cursor-pointer"
+            className="font-dm text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center cursor-pointer"
           >
             Work
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className="font-dm text-base text-stone hover:text-ink transition-colors min-h-[44px] flex items-center cursor-pointer"
+            className="font-dm text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center cursor-pointer"
           >
             About
           </button>

@@ -62,7 +62,7 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.variable} ${instrumentSerif.variable} ${dmSans.variable} antialiased`}
     >
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col grain-overlay">
         <a href="#main-content" className="skip-to-content font-dm">
           Skip to content
         </a>
