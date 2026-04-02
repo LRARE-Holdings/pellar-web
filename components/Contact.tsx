@@ -5,7 +5,7 @@ export function Contact() {
     <section id="contact" className="px-6 py-32 border-t border-border">
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
-          <h2 className="font-instrument text-3xl md:text-5xl lg:text-6xl text-fg mb-8 max-w-3xl">
+          <h2 className="font-satoshi font-bold text-3xl md:text-5xl lg:text-6xl text-fg mb-8 max-w-3xl">
             Got a project? Let&apos;s talk.
           </h2>
         </ScrollReveal>

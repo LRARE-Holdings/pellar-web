@@ -15,7 +15,7 @@ export function LegalLayout({ title, lastUpdated, children }: LegalLayoutProps) 
             <p className="font-satoshi text-sm text-fg-muted uppercase tracking-widest mb-6">
               Legal
             </p>
-            <h1 className="font-instrument text-4xl md:text-6xl text-fg leading-[1.05] tracking-tight max-w-3xl">
+            <h1 className="font-satoshi font-bold text-4xl md:text-6xl text-fg leading-[1.05] tracking-tight max-w-3xl">
               {title}
             </h1>
             <p className="mt-6 font-satoshi text-sm text-fg-muted">

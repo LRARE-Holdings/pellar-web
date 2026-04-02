@@ -5,7 +5,7 @@ export function Hero() {
     <section className="min-h-screen flex flex-col justify-center px-6 pt-24 pb-16">
       <div className="max-w-7xl mx-auto w-full">
         <HeroReveal delay={100}>
-          <h1 className="font-instrument text-5xl md:text-7xl lg:text-[5.5rem] text-fg leading-[1.08] tracking-tight max-w-4xl">
+          <h1 className="font-satoshi font-bold text-5xl md:text-7xl lg:text-[5.5rem] text-fg leading-[1.08] tracking-tight max-w-4xl">
             We build software for your business.
           </h1>
         </HeroReveal>

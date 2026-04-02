@@ -7,7 +7,7 @@ export default function NotFound() {
         <p className="font-satoshi text-sm text-fg-muted uppercase tracking-widest mb-6">
           404
         </p>
-        <h1 className="font-instrument text-5xl md:text-7xl text-fg leading-[1.05] tracking-tight max-w-3xl">
+        <h1 className="font-satoshi font-bold text-5xl md:text-7xl text-fg leading-[1.05] tracking-tight max-w-3xl">
           Nothing here.
         </h1>
         <p className="mt-8 font-satoshi text-lg text-fg-muted max-w-md leading-relaxed">

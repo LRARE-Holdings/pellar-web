@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Instrument_Serif } from "next/font/google";
+import { Outfit } from "next/font/google";
 import localFont from "next/font/local";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
@@ -10,13 +10,6 @@ const outfit = Outfit({
   variable: "--font-outfit-var",
   subsets: ["latin"],
   weight: ["300"],
-});
-
-const instrumentSerif = Instrument_Serif({
-  variable: "--font-instrument-var",
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
 });
 
 const satoshi = localFont({
@@ -65,7 +58,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${instrumentSerif.variable} ${satoshi.variable} antialiased`}
+      className={`${outfit.variable} ${satoshi.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col grain-overlay">
         <a href="#main-content" className="skip-to-content font-satoshi">

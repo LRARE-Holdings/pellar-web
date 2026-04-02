@@ -52,7 +52,6 @@
   --color-border: var(--border);
 
   --font-outfit: var(--font-outfit-var);
-  --font-instrument: var(--font-instrument-var);
   --font-satoshi: var(--font-satoshi-var);
 }
 
@@ -183,8 +182,8 @@ body {
 
 /* Legal prose typography */
 .legal-prose h2 {
-  font-family: var(--font-instrument-var), serif;
-  font-weight: 400;
+  font-family: var(--font-satoshi-var), sans-serif;
+  font-weight: 700;
   font-size: 1.5rem;
   color: var(--fg);
   margin-top: 3rem;

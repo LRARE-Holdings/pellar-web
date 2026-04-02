@@ -5,7 +5,7 @@ export function About() {
     <section id="about" className="px-6 py-32 bg-surface">
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
-          <h2 className="font-instrument text-3xl md:text-5xl text-fg mb-10">
+          <h2 className="font-satoshi font-bold text-3xl md:text-5xl text-fg mb-10">
             About Pellar
           </h2>
         </ScrollReveal>
