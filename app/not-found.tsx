@@ -4,14 +4,14 @@ export default function NotFound() {
   return (
     <main className="min-h-[80vh] flex flex-col justify-center px-6 pt-24">
       <div className="max-w-7xl mx-auto w-full">
-        <p className="font-dm text-sm text-stone/60 uppercase tracking-widest mb-6">
+        <p className="font-dm text-sm text-stone uppercase tracking-widest mb-6">
           404
         </p>
-        <h1 className="font-outfit font-light text-5xl md:text-7xl text-off-white leading-[1.05] tracking-tight max-w-3xl">
+        <h1 className="font-instrument text-5xl md:text-7xl text-ink leading-[1.05] tracking-tight max-w-3xl">
           Nothing here.
         </h1>
         <p className="mt-8 font-dm text-lg text-stone max-w-md leading-relaxed">
-          The page you're looking for doesn't exist or has moved.
+          The page you are looking for does not exist or has moved.
         </p>
         <Link
           href="/"

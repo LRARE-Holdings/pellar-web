@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     "How Pellar Technologies uses cookies. We only use essential cookies required for the site to function.",
   openGraph: {
-    title: "Cookie Policy | Pellar Technologies",
+    title: "Cookie Policy | Pellar",
     description:
       "How Pellar Technologies uses cookies. Essential cookies only, no tracking.",
-    url: "https://pellar.co.uk/cookies",
+    url: "https://www.pellar.co.uk/cookies",
   },
 };
 

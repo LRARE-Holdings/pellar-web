@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "How Pellar Technologies collects, uses, and protects your personal data.",
   openGraph: {
-    title: "Privacy Policy | Pellar Technologies",
+    title: "Privacy Policy | Pellar",
     description:
       "How Pellar Technologies collects, uses, and protects your personal data.",
-    url: "https://pellar.co.uk/privacy",
+    url: "https://www.pellar.co.uk/privacy",
   },
 };
 

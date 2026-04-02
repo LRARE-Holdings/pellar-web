@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     "Terms governing your use of the Pellar Technologies website and products.",
   openGraph: {
-    title: "Terms of Service | Pellar Technologies",
+    title: "Terms of Service | Pellar",
     description:
       "Terms governing your use of the Pellar Technologies website and products.",
-    url: "https://pellar.co.uk/terms",
+    url: "https://www.pellar.co.uk/terms",
   },
 };
 

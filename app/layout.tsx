@@ -8,7 +8,7 @@ import "./globals.css";
 const outfit = Outfit({
   variable: "--font-outfit-var",
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["300"],
 });
 
 const instrumentSerif = Instrument_Serif({
@@ -21,31 +21,34 @@ const instrumentSerif = Instrument_Serif({
 const dmSans = DM_Sans({
   variable: "--font-dm-var",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pellar.co.uk"),
+  metadataBase: new URL("https://www.pellar.co.uk"),
   title: {
-    default: "Pellar Technologies | Software your business can rely on",
-    template: "%s | Pellar Technologies",
+    default: "Pellar | Software built for your business",
+    template: "%s | Pellar",
   },
   description:
-    "Pellar Technologies designs, builds, and operates focused software products. Built in Newcastle-upon-Tyne.",
+    "Pellar builds web applications, MVPs, and platforms for businesses. Based in Newcastle-upon-Tyne.",
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://pellar.co.uk",
-    siteName: "Pellar Technologies",
-    title: "Pellar Technologies | Software your business can rely on",
+    url: "https://www.pellar.co.uk",
+    siteName: "Pellar",
+    title: "Pellar | Software built for your business",
     description:
-      "Pellar Technologies designs, builds, and operates focused software products. Built in Newcastle-upon-Tyne.",
+      "Pellar builds web applications, MVPs, and platforms for businesses. Based in Newcastle-upon-Tyne.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pellar Technologies",
+    title: "Pellar | Software built for your business",
     description:
-      "Software your business can rely on. Built in Newcastle-upon-Tyne.",
+      "Pellar builds web applications, MVPs, and platforms for businesses. Based in Newcastle-upon-Tyne.",
+  },
+  alternates: {
+    canonical: "https://www.pellar.co.uk",
   },
 };
 
@@ -59,7 +62,7 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.variable} ${instrumentSerif.variable} ${dmSans.variable} antialiased`}
     >
-      <body className="min-h-screen flex flex-col grain-overlay">
+      <body className="min-h-screen flex flex-col">
         <a href="#main-content" className="skip-to-content font-dm">
           Skip to content
         </a>
