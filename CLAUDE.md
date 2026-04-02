@@ -79,7 +79,7 @@ Showcase Pellar's own products as proof of delivery capability. Each entry shoul
 | Product | URL | Description | Demonstrates |
 |---------|-----|-------------|--------------|
 | Forma | useforma.co.uk | Studio management platform for fitness and Pilates studios. Website, booking, payments, email, analytics. | Full platform build: Stripe, scheduling, automated comms, multi-tenant |
-| Noodle | — | Thought-capture app for iOS and Android. AI-assisted clustering and resurfacing. | Mobile (React Native/Expo), AI integration, consumer product design |
+| Noodle | — | Thought-capture app for iOS. AI-assisted clustering and resurfacing. | Native iOS (Swift), AI integration, consumer product design |
 
 Frame this section as: "Products we've built and operate ourselves." Not a product catalogue — a portfolio.
 

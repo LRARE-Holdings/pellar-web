@@ -15,9 +15,9 @@ const products = [
     url: "https://noodleapp.xyz",
     urlLabel: "noodleapp.xyz",
     description:
-      "Thought-capture app for iOS and Android. Quick capture, AI-assisted clustering, and smart resurfacing of forgotten ideas.",
+      "Thought-capture app for iOS. Quick capture, AI-assisted clustering, and smart resurfacing of forgotten ideas.",
     demonstrates:
-      "Mobile development with React Native and Expo, AI integration, and consumer product design.",
+      "Native iOS development with Swift, AI integration, and consumer product design.",
   },
 ];
 
