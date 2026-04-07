@@ -13,7 +13,7 @@ export function Hero() {
 
         <HeroReveal delay={150}>
           <h1 className="font-satoshi font-bold text-5xl md:text-7xl lg:text-[5.5rem] text-fg leading-[1.05] tracking-tight max-w-5xl">
-            Technology that earns its keep.
+            Software your business can rely on.
           </h1>
         </HeroReveal>
 

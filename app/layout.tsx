@@ -25,7 +25,7 @@ const satoshi = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.pellar.co.uk"),
   title: {
-    default: "Pellar | Technology that earns its keep",
+    default: "Pellar | Software your business can rely on",
     template: "%s | Pellar",
   },
   description:
@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: "https://www.pellar.co.uk",
     siteName: "Pellar",
-    title: "Pellar | Technology that earns its keep",
+    title: "Pellar | Software your business can rely on",
     description:
       "Pellar Technologies delivers web platforms, AI tools, and operational systems for UK businesses. Fixed price, working in weeks.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pellar | Technology that earns its keep",
+    title: "Pellar | Software your business can rely on",
     description:
       "Pellar Technologies delivers web platforms, AI tools, and operational systems for UK businesses. Fixed price, working in weeks.",
   },
