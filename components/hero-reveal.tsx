@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 
 interface HeroRevealProps {
   children: ReactNode;
@@ -10,19 +10,26 @@ interface HeroRevealProps {
 
 export function HeroReveal({ children, delay = 0, className = "" }: HeroRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
     const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
     if (prefersReducedMotion) {
-      setVisible(true);
+      el.style.opacity = "1";
+      el.style.transform = "translateY(0)";
       return;
     }
 
-    const timeout = setTimeout(() => setVisible(true), delay);
+    const timeout = setTimeout(() => {
+      el.style.opacity = "1";
+      el.style.transform = "translateY(0)";
+    }, delay);
+
     return () => clearTimeout(timeout);
   }, [delay]);
 
@@ -31,9 +38,10 @@ export function HeroReveal({ children, delay = 0, className = "" }: HeroRevealPr
       ref={ref}
       className={className}
       style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(32px)",
-        transition: `opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1)`,
+        opacity: 0,
+        transform: "translateY(32px)",
+        transition:
+          "opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1)",
       }}
     >
       {children}

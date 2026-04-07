@@ -1,4 +1,5 @@
 import { ScrollReveal } from "@/components/scroll-reveal";
+import { ArrowLink } from "@/components/ArrowLink";
 
 const products = [
   {
@@ -12,42 +13,45 @@ const products = [
   },
   {
     name: "Noodle",
-    url: "https://noodleapp.xyz",
-    urlLabel: "noodleapp.xyz",
+    url: null,
+    urlLabel: null,
     description:
       "Thought-capture app for iOS. Quick capture, AI-assisted clustering, and smart resurfacing of forgotten ideas.",
     demonstrates:
-      "Native iOS development with Swift, AI integration, and consumer product design.",
+      "Native iOS development in Swift, AI integration, and consumer product design.",
   },
 ];
 
 export function Work() {
   return (
-    <section id="work" className="px-6 py-32 bg-surface">
+    <section className="px-6 py-32">
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
-          <h2 className="font-satoshi font-bold text-3xl md:text-5xl text-fg mb-6">
-            Products we&apos;ve built and operate
+          <p className="font-satoshi text-xs tracking-[0.2em] uppercase text-sage mb-6">
+            Work
+          </p>
+          <h2 className="font-satoshi font-bold text-3xl md:text-5xl text-fg mb-6 max-w-3xl">
+            Products we&apos;ve built and operate.
           </h2>
-          <p className="font-satoshi text-lg text-fg-muted max-w-2xl leading-relaxed mb-20">
+          <p className="font-satoshi text-lg text-fg-secondary max-w-2xl leading-relaxed mb-20">
             We don&apos;t just talk about building software. These are products we&apos;ve designed, shipped, and continue to run.
           </p>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-12 mb-16">
           {products.map((product, i) => (
             <ScrollReveal key={product.name} delay={i * 120}>
-              <div className="border border-border p-8 md:p-10">
+              <div className="border border-border p-8 md:p-10 h-full flex flex-col">
                 <h3 className="font-satoshi font-bold text-2xl md:text-3xl text-fg mb-4">
                   {product.name}
                 </h3>
                 <p className="font-satoshi text-sm text-fg-secondary leading-relaxed mb-6">
                   {product.description}
                 </p>
-                <p className="font-satoshi text-sm text-fg-muted leading-relaxed mb-8">
+                <p className="font-satoshi text-sm text-fg-muted leading-relaxed mb-8 flex-1">
                   {product.demonstrates}
                 </p>
-                {product.url && (
+                {product.url && product.urlLabel && (
                   <a
                     href={product.url}
                     target="_blank"
@@ -70,6 +74,10 @@ export function Work() {
             </ScrollReveal>
           ))}
         </div>
+
+        <ScrollReveal>
+          <ArrowLink href="/work">View all work</ArrowLink>
+        </ScrollReveal>
       </div>
     </section>
   );

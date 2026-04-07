@@ -1,9 +1,18 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+const links = [
+  { href: "/services", label: "Services" },
+  { href: "/solutions", label: "Solutions" },
+  { href: "/work", label: "Work" },
+  { href: "/about", label: "About" },
+];
+
 export function Nav() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -13,21 +22,16 @@ export function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  function scrollToSection(id: string) {
-    setMenuOpen(false);
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
-  }
+  const closeMenu = () => setMenuOpen(false);
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
     <nav
       aria-label="Main"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? "bg-bg/90 backdrop-blur-xl py-4"
-          : "bg-transparent py-6"
+        scrolled ? "bg-bg/90 backdrop-blur-xl py-4" : "bg-transparent py-6"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -39,30 +43,25 @@ export function Nav() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-10">
-          <button
-            onClick={() => scrollToSection("services")}
-            className="font-satoshi text-sm text-fg-muted hover:text-fg transition-colors duration-300 cursor-pointer"
-          >
-            Services
-          </button>
-          <button
-            onClick={() => scrollToSection("work")}
-            className="font-satoshi text-sm text-fg-muted hover:text-fg transition-colors duration-300 cursor-pointer"
-          >
-            Work
-          </button>
-          <button
-            onClick={() => scrollToSection("about")}
-            className="font-satoshi text-sm text-fg-muted hover:text-fg transition-colors duration-300 cursor-pointer"
-          >
-            About
-          </button>
-          <a
-            href="mailto:hello@pellar.co.uk"
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`font-satoshi text-sm transition-colors duration-300 ${
+                isActive(link.href)
+                  ? "text-fg"
+                  : "text-fg-muted hover:text-fg"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            href="/contact"
             className="font-satoshi text-sm text-forest hover:text-sage transition-colors duration-300"
           >
             Get in touch
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -90,35 +89,32 @@ export function Nav() {
       {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-500 ${
-          menuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
+          menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
         aria-hidden={!menuOpen}
       >
         <div className="px-6 pt-6 pb-8 flex flex-col gap-5 bg-bg/95 backdrop-blur-xl">
-          <button
-            onClick={() => scrollToSection("services")}
-            className="font-satoshi text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center cursor-pointer"
-          >
-            Services
-          </button>
-          <button
-            onClick={() => scrollToSection("work")}
-            className="font-satoshi text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center cursor-pointer"
-          >
-            Work
-          </button>
-          <button
-            onClick={() => scrollToSection("about")}
-            className="font-satoshi text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center cursor-pointer"
-          >
-            About
-          </button>
-          <a
-            href="mailto:hello@pellar.co.uk"
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={closeMenu}
+              className={`font-satoshi text-base transition-colors min-h-[44px] flex items-center ${
+                isActive(link.href)
+                  ? "text-fg"
+                  : "text-fg-muted hover:text-fg"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            href="/contact"
+            onClick={closeMenu}
             className="font-satoshi text-base text-forest hover:text-sage transition-colors min-h-[44px] flex items-center"
           >
             Get in touch
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

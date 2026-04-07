@@ -1,53 +1,105 @@
 import Link from "next/link";
 
+const navColumns = [
+  {
+    heading: "Studio",
+    links: [
+      { href: "/services", label: "Services" },
+      { href: "/solutions", label: "Solutions" },
+      { href: "/work", label: "Work" },
+      { href: "/about", label: "About" },
+    ],
+  },
+  {
+    heading: "Talk to us",
+    links: [
+      { href: "/contact", label: "Start a project" },
+      { href: "mailto:hello@pellar.co.uk", label: "hello@pellar.co.uk", external: true },
+    ],
+  },
+];
+
 export function Footer() {
   return (
-    <footer className="border-t border-border">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10">
-          <div>
-            <span className="font-outfit text-[15px] font-light tracking-[0.35em] text-fg uppercase block mb-3">
+    <footer className="border-t border-border mt-auto">
+      <div className="max-w-7xl mx-auto px-6 py-20">
+        <div className="grid md:grid-cols-12 gap-12 md:gap-8 mb-16">
+          <div className="md:col-span-5">
+            <span className="font-outfit text-[15px] font-light tracking-[0.35em] text-fg uppercase block mb-4">
               PELLAR
             </span>
-            <p className="font-satoshi text-sm text-fg-muted">
-              Software built for your business.
+            <p className="font-satoshi text-base text-fg-secondary leading-relaxed max-w-sm mb-8">
+              A small software studio building web applications, MVPs, and AI tools for businesses. Newcastle, UK.
             </p>
+            <Link
+              href="/contact"
+              className="font-satoshi text-sm text-forest hover:text-sage transition-colors"
+            >
+              Start a project →
+            </Link>
           </div>
 
-          <div className="flex flex-col md:items-end gap-2">
-            <p className="font-satoshi text-sm text-fg-secondary">
-              Pellar Technologies Ltd
-            </p>
-            <p className="font-satoshi text-xs text-fg-muted">
-              Company No. 16807366
-            </p>
-            <p className="font-satoshi text-sm text-fg-secondary">
-              Newcastle-upon-Tyne
-            </p>
-            <a
-              href="mailto:hello@pellar.co.uk"
-              className="font-satoshi text-sm text-forest hover:text-sage transition-colors duration-300"
-            >
-              hello@pellar.co.uk
-            </a>
-          </div>
+          {navColumns.map((col) => (
+            <div key={col.heading} className="md:col-span-3">
+              <p className="font-satoshi text-xs uppercase tracking-[0.15em] text-sage mb-5">
+                {col.heading}
+              </p>
+              <div className="flex flex-col gap-3">
+                {col.links.map((link) =>
+                  link.external ? (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      className="font-satoshi text-sm text-fg-secondary hover:text-fg transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="font-satoshi text-sm text-fg-secondary hover:text-fg transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ),
+                )}
+              </div>
+            </div>
+          ))}
+
+          <div className="md:col-span-1" />
         </div>
 
-        <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row md:justify-between items-start md:items-center gap-6">
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row md:justify-between items-start md:items-center gap-6">
+          <div className="space-y-1">
+            <p className="font-satoshi text-xs text-fg-muted">
+              Pellar Technologies Ltd · Company No. 16807366 · Newcastle-upon-Tyne
+            </p>
+            <p className="font-satoshi text-xs text-fg-muted">
+              &copy; {new Date().getFullYear()} Pellar Technologies Ltd. All rights reserved.
+            </p>
+          </div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            <Link href="/privacy" className="font-satoshi text-xs text-fg-muted hover:text-fg transition-colors duration-300">
-              Privacy Policy
+            <Link
+              href="/privacy"
+              className="font-satoshi text-xs text-fg-muted hover:text-fg transition-colors duration-300"
+            >
+              Privacy
             </Link>
-            <Link href="/terms" className="font-satoshi text-xs text-fg-muted hover:text-fg transition-colors duration-300">
-              Terms of Service
+            <Link
+              href="/terms"
+              className="font-satoshi text-xs text-fg-muted hover:text-fg transition-colors duration-300"
+            >
+              Terms
             </Link>
-            <Link href="/cookies" className="font-satoshi text-xs text-fg-muted hover:text-fg transition-colors duration-300">
-              Cookie Policy
+            <Link
+              href="/cookies"
+              className="font-satoshi text-xs text-fg-muted hover:text-fg transition-colors duration-300"
+            >
+              Cookies
             </Link>
           </div>
-          <p className="font-satoshi text-xs text-fg-muted">
-            &copy; {new Date().getFullYear()} Pellar Technologies Ltd. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
