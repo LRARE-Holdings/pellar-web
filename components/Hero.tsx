@@ -7,19 +7,19 @@ export function Hero() {
       <div className="max-w-7xl mx-auto w-full">
         <HeroReveal delay={50}>
           <p className="font-satoshi text-xs tracking-[0.2em] uppercase text-sage mb-8">
-            Software studio · Newcastle
+            Pellar Technologies
           </p>
         </HeroReveal>
 
         <HeroReveal delay={150}>
           <h1 className="font-satoshi font-bold text-5xl md:text-7xl lg:text-[5.5rem] text-fg leading-[1.05] tracking-tight max-w-5xl">
-            We build software for your business.
+            Technology that earns its keep.
           </h1>
         </HeroReveal>
 
         <HeroReveal delay={350}>
           <p className="mt-8 font-satoshi text-lg md:text-xl text-fg-secondary max-w-2xl leading-relaxed">
-            Web applications, MVPs, AI-powered tools, and production platforms. Built and maintained by a small, focused team in Newcastle.
+            We deliver web platforms, AI tools, and operational systems for UK businesses. Fixed price, working in weeks, owned by you on day one.
           </p>
         </HeroReveal>
 
@@ -38,10 +38,10 @@ export function Hero() {
               </svg>
             </Link>
             <Link
-              href="/services"
+              href="/solutions"
               className="font-satoshi text-sm text-fg-muted hover:text-fg transition-colors"
             >
-              See what we build →
+              See what we deliver →
             </Link>
           </div>
         </HeroReveal>

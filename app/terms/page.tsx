@@ -31,9 +31,9 @@ export default function TermsPage() {
 
       <h2>Who we are</h2>
       <p>
-        Pellar Technologies Ltd is a company registered in England and Wales (company
-        number 16807366), operating from Newcastle-upon-Tyne. Our contact email
-        is <a href="mailto:hello@pellar.co.uk">hello@pellar.co.uk</a>.
+        Pellar Technologies Ltd is a company registered in England and Wales
+        (company number 16807366). Our contact email is{" "}
+        <a href="mailto:hello@pellar.co.uk">hello@pellar.co.uk</a>.
       </p>
 
       <h2>Using our website</h2>
@@ -126,7 +126,7 @@ export default function TermsPage() {
       <h2>Contact</h2>
       <p>
         Pellar Technologies Ltd<br />
-        Newcastle-upon-Tyne<br />
+        Registered in England and Wales · Company No. 16807366<br />
         <a href="mailto:hello@pellar.co.uk">hello@pellar.co.uk</a>
       </p>
 

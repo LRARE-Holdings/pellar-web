@@ -7,12 +7,12 @@ import { Contact } from "@/components/Contact";
 export const metadata: Metadata = {
   title: "Solutions",
   description:
-    "Productised builds for sales pipelines, referral tracking, AI note taking, AI CRM, and custom AI integration.",
+    "Productised systems for sales pipelines, referral tracking, AI note taking, AI-driven CRM, and custom AI integration.",
   alternates: { canonical: "https://www.pellar.co.uk/solutions" },
   openGraph: {
     title: "Solutions | Pellar",
     description:
-      "Productised builds for sales pipelines, referral tracking, AI note taking, AI CRM, and custom AI integration.",
+      "Productised systems for sales pipelines, referral tracking, AI note taking, AI-driven CRM, and custom AI integration.",
     url: "https://www.pellar.co.uk/solutions",
   },
 };
@@ -22,7 +22,7 @@ const solutions = [
     name: "Sales pipeline",
     tagline: "A modern CRM for small sales teams.",
     description:
-      "Track every lead from first contact to signed deal. Stage automation, follow-up reminders, and a dashboard the team will actually open. Built on the same foundations as our internal portal.",
+      "Track every lead from first contact to signed deal. Stage automation, follow-up reminders, and a dashboard your team will open every morning. Built on the same foundations as our internal portal.",
     capabilities: [
       "Lead capture from forms, email, and imports",
       "Pipeline stages with automation",
@@ -36,7 +36,7 @@ const solutions = [
     name: "Referral tracking",
     tagline: "Close the loop on word-of-mouth growth.",
     description:
-      "Capture referrals from customers, partners, and staff. Attribute every new client to the right source, automate reward calculations, and finally know which channels are working.",
+      "Capture referrals from customers, partners, and staff. Attribute every new client to the right source, automate reward calculations, and find out which channels pay.",
     capabilities: [
       "Unique referral links and codes",
       "Multi-step attribution",
@@ -50,7 +50,7 @@ const solutions = [
     name: "AI note taking",
     tagline: "Capture meetings. Surface what matters.",
     description:
-      "Voice and text capture across meetings, calls, and ideas. AI clusters notes by topic, links related conversations, and resurfaces what would otherwise be forgotten. Built on the same engine as Noodle.",
+      "Voice and text capture across meetings, calls, and ideas. AI clusters notes by topic, links related conversations, and brings the right note back when you need it. Built on the same engine as Noodle.",
     capabilities: [
       "Quick capture from web, mobile, and audio",
       "Automatic clustering and tagging",
@@ -64,7 +64,7 @@ const solutions = [
     name: "AI-driven CRM",
     tagline: "A relationship manager that pulls its weight.",
     description:
-      "A CRM that drafts outreach, summarises history, and suggests the next best action for every contact. Designed to fit how your team already works, not force a new process onto them.",
+      "A CRM that drafts your outreach, summarises history, and tells you who to call next. Designed to fit how your team already works.",
     capabilities: [
       "AI-drafted emails and follow-ups",
       "Conversation summaries on every contact",
@@ -75,10 +75,10 @@ const solutions = [
     range: "Typical builds: £10k – £30k",
   },
   {
-    name: "Custom AI builds",
-    tagline: "Custom intelligence, integrated where you need it.",
+    name: "Custom AI",
+    tagline: "AI scoped to your operation, integrated where you work.",
     description:
-      "Research agents, document processors, internal copilots, classification engines. We build AI features that plug into your existing systems and solve a specific operational problem. Scoped to your use case, not a template.",
+      "Research agents, document processors, internal copilots, classification engines. We build AI features that plug into your existing systems and solve a specific operational problem.",
     capabilities: [
       "Discovery and feasibility shaping",
       "Model selection and prompt engineering",
@@ -95,10 +95,10 @@ export default function SolutionsPage() {
     <main>
       <PageHeader
         eyebrow="Solutions"
-        title="Productised builds for common problems."
+        title="Productised systems for common operational problems."
         intro={
           <>
-            Tested patterns we deliver faster because we&apos;ve built them before. Each one becomes yours, hosted on your own infrastructure, ready to extend as your needs change.
+            Patterns we have shipped before, ready to deliver again. Each one becomes yours: your data, your infrastructure, your roadmap.
           </>
         }
       />
@@ -165,18 +165,18 @@ export default function SolutionsPage() {
               Why productised
             </p>
             <h2 className="font-satoshi font-bold text-3xl md:text-4xl text-fg leading-tight">
-              The benefit of building it before.
+              We have built it before.
             </h2>
           </div>
           <div className="md:col-span-7">
             <p className="font-satoshi text-base text-fg-secondary leading-relaxed mb-5 max-w-xl">
-              Every solution above is something we&apos;ve already built and shipped. That means we know the edges, the trade-offs, and where the work actually lives. You get a faster build, a more confident timeline, and a sharper price.
+              Every solution above is something we have already shipped. We know the edges, the trade-offs, and where the work lives. You get a faster build, a tighter timeline, and a sharper price.
             </p>
             <p className="font-satoshi text-base text-fg-secondary leading-relaxed mb-5 max-w-xl">
               Each delivery is a custom build for your business. You own the code. You own the data. We host it for you, or hand it over to your team.
             </p>
             <p className="font-satoshi text-base text-fg-muted leading-relaxed max-w-xl">
-              If you need something bigger or more specific, custom AI builds are quoted to scope. Tell us what you&apos;re trying to do and we&apos;ll come back with a plan.
+              For something larger or more specific, custom AI work is quoted to scope. Tell us what you are trying to do and we will come back with a plan.
             </p>
             <div className="mt-10">
               <Link href="/contact" className="cta-link">

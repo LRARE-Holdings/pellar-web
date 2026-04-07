@@ -25,25 +25,25 @@ const satoshi = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.pellar.co.uk"),
   title: {
-    default: "Pellar | Software built for your business",
+    default: "Pellar | Technology that earns its keep",
     template: "%s | Pellar",
   },
   description:
-    "Pellar builds web applications, MVPs, and platforms for businesses. Based in Newcastle-upon-Tyne.",
+    "Pellar Technologies delivers web platforms, AI tools, and operational systems for UK businesses. Fixed price, working in weeks.",
   openGraph: {
     type: "website",
     locale: "en_GB",
     url: "https://www.pellar.co.uk",
     siteName: "Pellar",
-    title: "Pellar | Software built for your business",
+    title: "Pellar | Technology that earns its keep",
     description:
-      "Pellar builds web applications, MVPs, and platforms for businesses. Based in Newcastle-upon-Tyne.",
+      "Pellar Technologies delivers web platforms, AI tools, and operational systems for UK businesses. Fixed price, working in weeks.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pellar | Software built for your business",
+    title: "Pellar | Technology that earns its keep",
     description:
-      "Pellar builds web applications, MVPs, and platforms for businesses. Based in Newcastle-upon-Tyne.",
+      "Pellar Technologies delivers web platforms, AI tools, and operational systems for UK businesses. Fixed price, working in weeks.",
   },
   alternates: {
     canonical: "https://www.pellar.co.uk",

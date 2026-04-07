@@ -7,18 +7,18 @@ const products = [
     url: "https://useforma.co.uk",
     urlLabel: "useforma.co.uk",
     description:
-      "Studio management platform for fitness and Pilates studios. Website, booking, payments, email, and analytics in one place.",
+      "A management platform for fitness and Pilates studios. Website, booking, payments, customer email, and analytics in one place.",
     demonstrates:
-      "Full platform build with Stripe integration, scheduling engine, automated communications, and multi-tenant architecture.",
+      "A full multi-tenant platform with Stripe payments, a scheduling engine, automated customer comms, and operator dashboards.",
   },
   {
     name: "Noodle",
     url: null,
     urlLabel: null,
     description:
-      "Thought-capture app for iOS. Quick capture, AI-assisted clustering, and smart resurfacing of forgotten ideas.",
+      "An iOS thought-capture app. Quick capture, AI-assisted clustering, and smart resurfacing of forgotten ideas.",
     demonstrates:
-      "Native iOS development in Swift, AI integration, and consumer product design.",
+      "Native iOS in Swift, on-device and cloud AI, and a consumer product the team uses every day.",
   },
 ];
 
@@ -31,10 +31,10 @@ export function Work() {
             Work
           </p>
           <h2 className="font-satoshi font-bold text-3xl md:text-5xl text-fg mb-6 max-w-3xl">
-            Products we&apos;ve built and operate.
+            Products we built and run ourselves.
           </h2>
           <p className="font-satoshi text-lg text-fg-secondary max-w-2xl leading-relaxed mb-20">
-            We don&apos;t just talk about building software. These are products we&apos;ve designed, shipped, and continue to run.
+            Our own products are the proof. We design them, ship them, and operate them. The same people deliver every client project.
           </p>
         </ScrollReveal>
 

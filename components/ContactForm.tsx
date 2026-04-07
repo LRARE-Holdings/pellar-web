@@ -7,10 +7,10 @@ const PORTAL_BASE =
 const ENDPOINT = `${PORTAL_BASE}/api/contact`;
 
 const interests = [
-  { value: "web_app", label: "Web application" },
+  { value: "web_app", label: "Web platform" },
   { value: "mvp", label: "MVP / new product" },
   { value: "website", label: "Website" },
-  { value: "retainer", label: "Ongoing development" },
+  { value: "retainer", label: "Technology partnership" },
   { value: "pipeline", label: "Sales pipeline" },
   { value: "referral", label: "Referral tracking" },
   { value: "ai_notes", label: "AI note taking" },
@@ -91,13 +91,13 @@ export function ContactForm() {
           Message received
         </p>
         <h2 className="font-satoshi font-bold text-2xl md:text-3xl text-fg mb-5 leading-tight">
-          Thanks. We&apos;ll be in touch.
+          Thanks. We will be in touch.
         </h2>
         <p className="font-satoshi text-base text-fg-secondary leading-relaxed mb-2 max-w-lg">
-          Your message has landed in our inbox. We reply to every enquiry within one working day, usually the same day.
+          Your message has landed in our inbox. We reply to every enquiry within one working day.
         </p>
         <p className="font-satoshi text-sm text-fg-muted leading-relaxed">
-          If you&apos;d rather email directly, we&apos;re at hello@pellar.co.uk.
+          To reach us directly, email hello@pellar.co.uk.
         </p>
       </div>
     );
@@ -166,11 +166,11 @@ export function ContactForm() {
 
       <TextAreaField
         id="message"
-        label="What you're trying to do"
+        label="What you need"
         required
         value={form.message}
         onChange={(v) => update("message", v)}
-        placeholder="A few sentences about the problem, who it's for, and where you're up to."
+        placeholder="A few sentences about the problem, who it is for, and where you are up to."
       />
 
       {error ? (

@@ -20,9 +20,9 @@ export default function PrivacyPage() {
 
       <h2>Who we are</h2>
       <p>
-        Pellar Technologies Ltd (company number 16807366) is a software development
-        company registered in England and Wales, operating from Newcastle-upon-Tyne.
-        We design, build, and operate software products.
+        Pellar Technologies Ltd (company number 16807366) is a UK technology partner
+        registered in England and Wales. We design, build, and run web platforms,
+        AI tools, and operational systems for businesses.
       </p>
       <p>
         If you have questions about this policy or your personal data, contact us
@@ -32,9 +32,8 @@ export default function PrivacyPage() {
       <h2>What this policy covers</h2>
       <p>
         This policy explains what personal data we collect when you visit pellar.co.uk,
-        how we use it, and what rights you have. Our individual products (Forma,
-        Receipt, and Noodle) may have their own privacy terms that apply
-        when you use those services.
+        how we use it, and what rights you have. Our individual products (Forma and
+        Noodle) may have their own privacy terms that apply when you use those services.
       </p>
 
       <h2>What data we collect</h2>
@@ -65,16 +64,16 @@ export default function PrivacyPage() {
       <p>We process personal data on the following lawful bases under the UK GDPR:</p>
       <ul>
         <li>
-          <strong>Contract performance</strong> — to deliver the product or service
+          <strong>Contract performance.</strong> To deliver the product or service
           you signed up for.
         </li>
         <li>
-          <strong>Legitimate interest</strong> — to improve our products, respond to
+          <strong>Legitimate interest.</strong> To improve our products, respond to
           enquiries, and maintain security. We balance our interests against your
           rights and only process data where the impact on you is minimal.
         </li>
         <li>
-          <strong>Consent</strong> — where we specifically ask for it, such as if we
+          <strong>Consent.</strong> Where we specifically ask for it, such as if we
           ever introduce marketing communications. You can withdraw consent at any time.
         </li>
       </ul>
@@ -90,11 +89,11 @@ export default function PrivacyPage() {
       <p>We use a small number of third-party services to operate:</p>
       <ul>
         <li>
-          <strong>Vercel</strong> — hosts the pellar.co.uk website. Vercel processes
+          <strong>Vercel.</strong> Hosts the pellar.co.uk website. Vercel processes
           server logs including IP addresses as part of delivering the site.
         </li>
         <li>
-          <strong>Stripe</strong> — handles payment processing for products that
+          <strong>Stripe.</strong> Handles payment processing for products that
           accept payments. Stripe processes payment data under its own privacy policy.
         </li>
       </ul>
@@ -151,7 +150,7 @@ export default function PrivacyPage() {
       <h2>Contact</h2>
       <p>
         Pellar Technologies Ltd<br />
-        Newcastle-upon-Tyne<br />
+        Registered in England and Wales · Company No. 16807366<br />
         <a href="mailto:hello@pellar.co.uk">hello@pellar.co.uk</a>
       </p>
 

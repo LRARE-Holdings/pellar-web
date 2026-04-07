@@ -39,14 +39,14 @@ export default function CookiesPage() {
       <h2>What we store</h2>
       <ul>
         <li>
-          <strong>Cookie consent preference</strong> — We use your browser&apos;s local
+          <strong>Cookie consent preference.</strong> We use your browser&apos;s local
           storage (not a cookie) to remember that you have seen and dismissed the cookie
           notice on this site. This is stored under the
           key <code className="text-off-white/80 bg-white/5 px-1.5 py-0.5 rounded text-xs">pellar_cookie_consent</code> and
           persists until you clear your browser data.
         </li>
         <li>
-          <strong>Hosting cookies</strong> — Our hosting provider (Vercel) may set
+          <strong>Hosting cookies.</strong> Our hosting provider (Vercel) may set
           cookies that are essential for delivering the website securely and
           reliably. These are strictly necessary and do not track you.
         </li>
@@ -55,8 +55,8 @@ export default function CookiesPage() {
       <h2>Third-party cookies</h2>
       <p>
         We do not use any third-party cookies on pellar.co.uk. Our individual products
-        (Forma, Receipt, and Noodle) are hosted on their own domains
-        and may have separate cookie policies.
+        (Forma and Noodle) are hosted on their own domains and may have separate
+        cookie policies.
       </p>
 
       <h2>Managing cookies</h2>

@@ -5,27 +5,27 @@ const solutions = [
   {
     name: "Sales pipeline",
     summary:
-      "A modern CRM and pipeline tracker for small sales teams. Track leads, automate follow-ups, and see deals move through stages without spreadsheets.",
+      "A modern CRM and pipeline tracker for small sales teams. Track every deal, automate follow-ups, replace the spreadsheet.",
   },
   {
     name: "Referral tracking",
     summary:
-      "Capture, attribute, and reward referrals across your customers and partners. Built for service businesses that grow on word of mouth.",
+      "Capture, attribute, and reward referrals across customers and partners. Built for service businesses that grow on word of mouth.",
   },
   {
     name: "AI note taking",
     summary:
-      "Capture meetings, calls, and ideas. AI clusters and resurfaces what matters, so nothing important gets forgotten.",
+      "Capture meetings, calls, and ideas. AI clusters them by topic and brings the right note back when you need it.",
   },
   {
     name: "AI-driven CRM",
     summary:
-      "A relationship manager that drafts emails, summarises history, and surfaces the next best action. Fits the way your team already works.",
+      "A relationship manager that drafts your emails, summarises history, and tells you who to call next.",
   },
   {
-    name: "Custom AI builds",
+    name: "Custom AI",
     summary:
-      "Custom AI integrated into your existing systems: research agents, document processors, internal copilots. Scoped to your problem, not a template.",
+      "Research agents, document processors, internal copilots. AI scoped to your operation, integrated where you already work.",
   },
 ];
 
@@ -38,10 +38,10 @@ export function SolutionsPreview() {
             Solutions
           </p>
           <h2 className="font-satoshi font-bold text-3xl md:text-5xl text-fg mb-6 max-w-3xl">
-            Productised builds for common problems.
+            Productised systems for common operational problems.
           </h2>
           <p className="font-satoshi text-lg text-fg-secondary max-w-2xl leading-relaxed mb-20">
-            Tested patterns we deliver faster because we&apos;ve built them before. Each one becomes yours, hosted on your infrastructure, ready to extend.
+            Patterns we have shipped before, ready to deliver again. Each one becomes yours: your data, your infrastructure, your roadmap.
           </p>
         </ScrollReveal>
 

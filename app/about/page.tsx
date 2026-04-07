@@ -7,12 +7,12 @@ import { Contact } from "@/components/Contact";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Pellar is a small, focused software studio based in Newcastle-upon-Tyne. We've been building software since 2013.",
+    "Pellar Technologies is a UK technology partner delivering web platforms, AI tools, and operational systems for businesses. Building since 2013.",
   alternates: { canonical: "https://www.pellar.co.uk/about" },
   openGraph: {
     title: "About | Pellar",
     description:
-      "Pellar is a small, focused software studio based in Newcastle-upon-Tyne. We've been building software since 2013.",
+      "Pellar Technologies is a UK technology partner delivering web platforms, AI tools, and operational systems for businesses. Building since 2013.",
     url: "https://www.pellar.co.uk/about",
   },
 };
@@ -22,7 +22,7 @@ export default function AboutPage() {
     <main>
       <PageHeader
         eyebrow="About"
-        title="A small studio. Newcastle. Since 2013."
+        title="A small team. Real systems. Since 2013."
       />
 
       <section className="px-6 pb-32">
@@ -40,17 +40,12 @@ export default function AboutPage() {
           <div className="md:col-span-7 space-y-6">
             <ScrollReveal delay={100}>
               <p className="font-satoshi text-lg text-fg-secondary leading-relaxed">
-                Pellar is a focused software studio based in Newcastle-upon-Tyne. We work directly with businesses to design, build, and operate the software they need. No layers of project managers. No offshore handoffs. One team, from first call to live product.
+                Pellar Technologies is a UK technology partner. We work with businesses to design, build, and run the systems they need to operate. One team carries the work from first call to live product. There are no project manager layers and no offshore handoffs.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={150}>
               <p className="font-satoshi text-lg text-fg-secondary leading-relaxed">
-                We&apos;ve been building software since 2013. Over that time we&apos;ve shipped products of our own and worked with founders, agencies, and operations teams across the UK. The thread that runs through all of it is the same: pick a real problem, ship something that works, then keep it working.
-              </p>
-            </ScrollReveal>
-            <ScrollReveal delay={200}>
-              <p className="font-satoshi text-lg text-fg-muted leading-relaxed">
-                Built in Newcastle. Proud of it.
+                We have been delivering technology since 2013. Over that time we have built products of our own and shipped systems for founders, agencies, and operations teams across the UK. Every project follows the same line: pick a real problem, ship something that works, then keep it working.
               </p>
             </ScrollReveal>
           </div>

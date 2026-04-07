@@ -7,21 +7,21 @@ import { Contact } from "@/components/Contact";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Web applications, MVPs, websites, and ongoing development. Pricing and engagement details for working with Pellar.",
+    "Web platforms, MVPs, AI tools, websites, and ongoing technology partnerships. Pricing and engagement details for working with Pellar.",
   alternates: { canonical: "https://www.pellar.co.uk/services" },
   openGraph: {
     title: "Services | Pellar",
     description:
-      "Web applications, MVPs, websites, and ongoing development. Pricing and engagement details for working with Pellar.",
+      "Web platforms, MVPs, AI tools, websites, and ongoing technology partnerships. Pricing and engagement details for working with Pellar.",
     url: "https://www.pellar.co.uk/services",
   },
 };
 
 const services = [
   {
-    title: "Web applications",
+    title: "Web platforms",
     summary:
-      "Full-stack web apps, dashboards, internal portals, and admin tools. The kind of software your team uses every day to run the business.",
+      "Customer portals, internal dashboards, admin tools. The systems your team and your customers use every day to run the business.",
     includes: [
       "Discovery and architecture",
       "Database design and APIs",
@@ -34,7 +34,7 @@ const services = [
   {
     title: "MVPs and new products",
     summary:
-      "From idea to working product, fast. For founders and businesses validating new concepts without burning months on setup.",
+      "You bring the idea. We hand back a working product in four to eight weeks, hosted, ready for users, and pointed at a roadmap.",
     includes: [
       "Scope and feature shaping",
       "Working product in 4–8 weeks",
@@ -47,7 +47,7 @@ const services = [
   {
     title: "Booking and payment systems",
     summary:
-      "Scheduling, Stripe integration, customer accounts, automated comms. The same engine that powers Forma, adapted for your business.",
+      "Scheduling, Stripe integration, customer accounts, automated email. The same engine that runs Forma, adapted to your business.",
     includes: [
       "Stripe payments and subscriptions",
       "Calendar and booking flows",
@@ -60,7 +60,7 @@ const services = [
   {
     title: "Websites",
     summary:
-      "Marketing sites, company sites, and landing pages. Fast, performant, well-designed. No templates, no page builders.",
+      "Marketing sites, company sites, landing pages. Designed to a brief, written to convert, fast on every device.",
     includes: [
       "Copy direction and structure",
       "Custom design and build",
@@ -71,9 +71,9 @@ const services = [
     typical: "Typical sites: £4k – £12k",
   },
   {
-    title: "Ongoing development",
+    title: "Technology partnership",
     summary:
-      "A retainer for businesses that need a reliable development partner. Continuous feature work, maintenance, and operational support.",
+      "A monthly retainer for businesses that need a steady technology partner. Continuous feature work, maintenance, and operational support.",
     includes: [
       "Reserved capacity each month",
       "Direct line to the team",
@@ -90,10 +90,10 @@ export default function ServicesPage() {
     <main>
       <PageHeader
         eyebrow="Services"
-        title="What we build for clients."
+        title="What we deliver."
         intro={
           <>
-            We work with businesses at every stage. From a first prototype to a production platform that runs your operation. Everything we ship is designed, built, and operated by the same small team.
+            We work with businesses at every stage. From a first prototype to a platform that runs your operation. The same small team owns the work from first call to live system.
           </>
         }
       />
@@ -157,7 +157,7 @@ export default function ServicesPage() {
               How pricing works
             </p>
             <h2 className="font-satoshi font-bold text-3xl md:text-4xl text-fg leading-tight">
-              Fixed-scope projects. Honest ranges.
+              Fixed scope. Honest ranges.
             </h2>
           </div>
           <div className="md:col-span-7">
@@ -165,10 +165,10 @@ export default function ServicesPage() {
               Every engagement starts with a free scoping call. We use it to understand the problem, talk through approaches, and write a one-page proposal with a fixed price and timeline.
             </p>
             <p className="font-satoshi text-base text-fg-secondary leading-relaxed mb-5 max-w-xl">
-              Most projects are billed in two or three milestones. Retainers are billed monthly. No tracked hours, no padded estimates, no surprises.
+              Most projects are billed in two or three milestones. Retainers are billed monthly. You get one quote, one timeline, and one team that holds it.
             </p>
             <p className="font-satoshi text-base text-fg-muted leading-relaxed max-w-xl">
-              The numbers above are realistic ranges based on the work we&apos;ve done. Your project will sit somewhere on that range depending on scope, integrations, and timeline. We&apos;ll tell you where before you commit.
+              The numbers above are real ranges from work we have shipped. Your project will sit somewhere on that range depending on scope, integrations, and timeline. We will tell you where before you commit.
             </p>
             <div className="mt-10">
               <Link href="/contact" className="cta-link">

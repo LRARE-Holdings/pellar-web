@@ -3,24 +3,24 @@ import { ArrowLink } from "@/components/ArrowLink";
 
 const services = [
   {
-    title: "Web applications",
+    title: "Web platforms",
     description:
-      "Full-stack web apps, dashboards, portals, and admin tools. The kind of software your team uses every day.",
+      "Customer portals, internal dashboards, admin tools. The systems your team and your customers use every day.",
   },
   {
-    title: "MVPs & new products",
+    title: "MVPs and new products",
     description:
-      "From idea to working product, fast. For founders and businesses testing new concepts without burning months on setup.",
+      "You bring the idea. We hand back a working product in weeks, ready for real users and real revenue.",
   },
   {
-    title: "AI-powered tools",
+    title: "AI tools",
     description:
-      "Note-taking, CRMs, internal copilots, and custom AI builds. Useful intelligence, not novelty.",
+      "Note taking, CRMs, copilots, document processors. AI that does a job, plugged into the systems you already run.",
   },
   {
     title: "Websites",
     description:
-      "Marketing sites, company sites, landing pages. Fast, performant, well-designed. No templates.",
+      "Marketing sites, company sites, landing pages. Designed to a brief, built to last, fast on every device.",
   },
 ];
 
@@ -33,10 +33,10 @@ export function ServicesPreview() {
             Services
           </p>
           <h2 className="font-satoshi font-bold text-3xl md:text-5xl text-fg mb-6 max-w-2xl">
-            Software that solves real problems.
+            Technology, delivered.
           </h2>
           <p className="font-satoshi text-lg text-fg-secondary max-w-2xl leading-relaxed mb-20">
-            We work with businesses at every stage, from first prototype to production platform.
+            We work with businesses at every stage. From a first prototype to a platform that runs your operation.
           </p>
         </ScrollReveal>
 

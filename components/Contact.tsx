@@ -10,12 +10,12 @@ export function Contact() {
             Get in touch
           </p>
           <h2 className="font-satoshi font-bold text-4xl md:text-6xl lg:text-7xl text-fg mb-10 max-w-3xl leading-[1.05]">
-            Got a project? Let&apos;s talk.
+            Tell us what you need.
           </h2>
         </ScrollReveal>
         <ScrollReveal delay={150}>
           <p className="font-satoshi text-lg text-fg-secondary max-w-2xl leading-relaxed mb-10">
-            Tell us a little about what you&apos;re building or trying to fix. We reply to every enquiry within one working day.
+            A few sentences about the system you want or the problem you want fixed. We reply to every enquiry within one working day.
           </p>
         </ScrollReveal>
         <ScrollReveal delay={250}>

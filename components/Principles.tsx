@@ -3,21 +3,21 @@ import { ScrollReveal } from "@/components/scroll-reveal";
 const principles = [
   {
     num: "01",
-    title: "Build, don\u2019t describe",
+    title: "We ship working systems",
     description:
-      "We ship working software, not slide decks or wireframe PDFs. The product is the deliverable.",
+      "Every engagement ends with a live product. Slide decks and wireframe PDFs are not the deliverable.",
   },
   {
     num: "02",
-    title: "Specific over broad",
+    title: "We pick a real problem",
     description:
-      "Every project solves a real problem. No feature bloat, no scope creep for its own sake.",
+      "Each project answers a question your business is already asking. We cut feature bloat at the proposal, not at launch.",
   },
   {
     num: "03",
-    title: "Own the whole stack",
+    title: "We own the whole stack",
     description:
-      "Design, development, and operations. One team, one standard, no handoff gaps.",
+      "Design, build, integration, hosting, and operation. One team carries the work from first call to live system.",
   },
 ];
 

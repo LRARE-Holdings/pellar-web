@@ -20,10 +20,10 @@ export default function ContactPage() {
     <main>
       <PageHeader
         eyebrow="Contact"
-        title="Tell us what you're building."
+        title="Tell us what you need."
         intro={
           <>
-            A few sentences is enough to get the conversation started. We&apos;ll come back with questions, ideas, and a sensible next step.
+            A few sentences is enough to start the conversation. We come back with questions, ideas, and a sensible next step.
           </>
         }
       />
@@ -44,10 +44,10 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="font-satoshi text-xs tracking-[0.2em] uppercase text-sage mb-4">
-                Where we are
+                Where we work
               </p>
               <p className="font-satoshi text-base text-fg-secondary leading-relaxed">
-                Newcastle-upon-Tyne, United Kingdom. We work with clients across the UK and beyond.
+                Across the UK, remote-first. We meet on calls, on site when it helps, and we keep delivery moving in between.
               </p>
             </div>
             <div>
@@ -55,7 +55,7 @@ export default function ContactPage() {
                 What happens next
               </p>
               <p className="font-satoshi text-base text-fg-secondary leading-relaxed mb-3">
-                One of us reads your message the same day. If your project sounds like a fit, we book a free 30-minute scoping call.
+                One of us reads your message the same day. If your project is a fit, we book a free 30-minute scoping call.
               </p>
               <p className="font-satoshi text-base text-fg-secondary leading-relaxed">
                 After the call you get a written summary, an honest opinion on the approach, and a fixed price if you want to move forward.

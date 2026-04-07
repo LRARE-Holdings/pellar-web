@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const navColumns = [
   {
-    heading: "Studio",
+    heading: "Pellar",
     links: [
       { href: "/services", label: "Services" },
       { href: "/solutions", label: "Solutions" },
@@ -29,7 +29,7 @@ export function Footer() {
               PELLAR
             </span>
             <p className="font-satoshi text-base text-fg-secondary leading-relaxed max-w-sm mb-8">
-              A small software studio building web applications, MVPs, and AI tools for businesses. Newcastle, UK.
+              We deliver web platforms, AI tools, and operational systems for UK businesses.
             </p>
             <Link
               href="/contact"
@@ -74,7 +74,7 @@ export function Footer() {
         <div className="pt-8 border-t border-border flex flex-col md:flex-row md:justify-between items-start md:items-center gap-6">
           <div className="space-y-1">
             <p className="font-satoshi text-xs text-fg-muted">
-              Pellar Technologies Ltd · Company No. 16807366 · Newcastle-upon-Tyne
+              Pellar Technologies Ltd · Registered in England &amp; Wales · Company No. 16807366
             </p>
             <p className="font-satoshi text-xs text-fg-muted">
               &copy; {new Date().getFullYear()} Pellar Technologies Ltd. All rights reserved.

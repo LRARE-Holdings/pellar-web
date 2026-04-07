@@ -6,12 +6,12 @@ import { Contact } from "@/components/Contact";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Products Pellar has built and operates. Forma is a studio management platform. Noodle is an AI thought-capture app for iOS.",
+    "Products Pellar built and runs. Forma is a management platform for fitness studios. Noodle is an AI thought-capture app for iOS.",
   alternates: { canonical: "https://www.pellar.co.uk/work" },
   openGraph: {
     title: "Work | Pellar",
     description:
-      "Products Pellar has built and operates. Forma is a studio management platform. Noodle is an AI thought-capture app for iOS.",
+      "Products Pellar built and runs. Forma is a management platform for fitness studios. Noodle is an AI thought-capture app for iOS.",
     url: "https://www.pellar.co.uk/work",
   },
 };
@@ -23,7 +23,7 @@ const projects = [
     url: "https://useforma.co.uk",
     urlLabel: "useforma.co.uk",
     description:
-      "A studio management platform for fitness and Pilates studios. Each studio gets its own branded website, online booking, payment processing, customer management, automated email, and analytics, all in one place.",
+      "A management platform for fitness and Pilates studios. Each studio gets its own branded website, online booking, payment processing, customer management, automated email, and analytics in one place.",
     demonstrates: [
       "Multi-tenant SaaS architecture",
       "Stripe payments and subscriptions",
@@ -39,9 +39,9 @@ const projects = [
     url: null,
     urlLabel: null,
     description:
-      "An iOS-only thought-capture app. Quick capture from anywhere, AI-assisted clustering of related ideas, and smart resurfacing of notes you would otherwise forget. A consumer product about getting your head clear.",
+      "An iOS thought-capture app. Quick capture from anywhere, AI-assisted clustering of related ideas, and smart resurfacing of notes that would otherwise be forgotten. A consumer product the team uses every day.",
     demonstrates: [
-      "Native iOS development in Swift",
+      "Native iOS in Swift",
       "On-device and cloud AI integration",
       "Local-first sync architecture",
       "Consumer product and interaction design",
@@ -55,10 +55,10 @@ export default function WorkPage() {
     <main>
       <PageHeader
         eyebrow="Work"
-        title="Products we've built and operate."
+        title="Products we built and run ourselves."
         intro={
           <>
-            We don&apos;t just talk about building software. These are products we&apos;ve designed, shipped, and continue to run. They&apos;re also the proof that we know how to deliver the same quality for clients.
+            Our own products are the proof. We design them, ship them, and operate them. The same people deliver every client project.
           </>
         }
       />
