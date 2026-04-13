@@ -57,8 +57,14 @@ export function Nav() {
             </Link>
           ))}
           <Link
-            href="/contact"
+            href="/book"
             className="font-satoshi text-sm text-forest hover:text-sage transition-colors duration-300"
+          >
+            Book a call
+          </Link>
+          <Link
+            href="/contact"
+            className="font-satoshi text-sm text-fg-muted hover:text-fg transition-colors duration-300"
           >
             Get in touch
           </Link>
@@ -109,9 +115,16 @@ export function Nav() {
             </Link>
           ))}
           <Link
-            href="/contact"
+            href="/book"
             onClick={closeMenu}
             className="font-satoshi text-base text-forest hover:text-sage transition-colors min-h-[44px] flex items-center"
+          >
+            Book a call
+          </Link>
+          <Link
+            href="/contact"
+            onClick={closeMenu}
+            className="font-satoshi text-base text-fg-muted hover:text-fg transition-colors min-h-[44px] flex items-center"
           >
             Get in touch
           </Link>
