@@ -100,6 +100,21 @@ interface Slot {
   available: boolean;
 }
 
+interface ApiSlot {
+  start: string; // ISO datetime
+  end: string;
+}
+
+/** Convert API response slots (ISO datetimes) into the widget format */
+function apiSlotsToSlots(apiSlots: ApiSlot[]): Slot[] {
+  return apiSlots.map((s) => {
+    const d = new Date(s.start);
+    const hh = String(d.getUTCHours()).padStart(2, "0");
+    const mm = String(d.getUTCMinutes()).padStart(2, "0");
+    return { time: `${hh}:${mm}`, available: true };
+  });
+}
+
 type Step = 1 | 2 | 3 | 4;
 type SubmitStatus = "idle" | "submitting" | "success" | "error";
 
@@ -152,8 +167,8 @@ export function BookingWidget() {
       if (!res.ok) {
         throw new Error("Could not load available times");
       }
-      const data = (await res.json()) as { slots: Slot[] };
-      setSlots(data.slots ?? []);
+      const data = (await res.json()) as { slots: ApiSlot[] };
+      setSlots(apiSlotsToSlots(data.slots ?? []));
     } catch {
       setSlotsError("Could not load available times. Please try again.");
     } finally {
@@ -201,13 +216,21 @@ export function BookingWidget() {
     setSubmitError(null);
 
     try {
+      // Build ISO slot_start from date + time (UTC)
+      const slotStart = `${selectedDate}T${selectedTime}:00.000Z`;
+
       const res = await fetch(RESERVE_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          date: selectedDate,
-          time: selectedTime,
-          ...form,
+          name: form.name,
+          email: form.email,
+          company: form.company,
+          message: form.message,
+          service_interest: form.interest,
+          meeting_type: form.meeting_type,
+          slot_start: slotStart,
+          website: form.website,
         }),
       });
 
